@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------------- */
+/* MANDATORY: Inject Tailwind's Base, Components, and Utilities */
+/* ------------------------------------------------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------- */
+/* Global Styles: Ensures Tailwind reset works correctly */
+/* ------------------------------------------------------------------- */
+body {
+  /* Margin aur default background ko Tailwind ko handle karne dein */
+  margin: 0;
+  
+  /* Tailwind config mein Inter set hai, yahan hum bas fallback provide kar rahe hain */
+  font-family: 'Inter', sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* App ke liye light background */
+  @apply bg-gray-50; 
+}
+
+/* ------------------------------------------------------------------- */
+/* Custom Components (Optional, for reusability) */
+/* ------------------------------------------------------------------- */
+@layer components {
+  /* Ek primary button style, jise hum <button className="btn-primary"> mein use kar sakte hain */
+  .btn-primary {
+    @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition duration-300;
+  }
+}
