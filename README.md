@@ -34,15 +34,26 @@ It allows users to browse, book, and view unique experiences with smooth navigat
 booklt-frontend/
 │
 ├── src/
+
 │ ├── components/ # Reusable UI components
+
 │ ├── pages/ # Home, Booking, and Result pages
+
 │ ├── services/ # API configuration (Axios)
+
 │ ├── App.tsx # Main app component
+
 │ └── main.tsx # Entry point
+
 │
 ├── public/
+
+
 │── package.json
+
+
 └── tailwind.config.js
+
 ---
 
 ## ⚙️ Setup Instructions
