@@ -31,9 +31,11 @@ It allows users to browse, book, and view unique experiences with smooth navigat
 ---
 
 ## 🗂️ Project Structure 
-booklt-frontend/
+booklt-frontend
+/
 │
-├── src/
+├──
+src/
 
 │ ├── components/ # Reusable UI components
 
